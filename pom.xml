@@ -42,7 +42,6 @@
 			<id>selenium-remote</id>
 			<properties>
 				<selenium.runTests>true</selenium.runTests>
-				<!-- Expected that selenium.host and selenium.port are set on command line -->
 			</properties>
 		</profile>
 	</profiles>
