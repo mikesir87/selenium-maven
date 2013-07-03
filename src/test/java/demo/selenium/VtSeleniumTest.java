@@ -11,15 +11,16 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import com.thoughtworks.selenium.Selenium;
 
 @RunWith(value = Parameterized.class)
-public class VtSeleniumTest extends AbstractSeleniumTest {
+public class VtSeleniumTest extends AbstractRemoteSeleniumTest {
 
   /**
    * Constructs a new instance.
+   * @param browser
    */
   public VtSeleniumTest(DesiredCapabilities browser) {
     super(browser);
   }
-  
+
   @Test
 	public void testVtSite() throws Exception {
 	  Selenium selenium = getSelenium();
